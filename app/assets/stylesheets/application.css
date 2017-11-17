@@ -14,13 +14,18 @@
  *= require_self
  */
 
-body {
-	margin: 0;
-	margin-top: 0
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
 }
 
 #section-1 {
-	margin-top: 0;
-	height: 1000px;
-	background-color: blue;
+	height: 550px;
+    background-image: url("martian_landscape3.png");
+    background-size: 100%;
 }
