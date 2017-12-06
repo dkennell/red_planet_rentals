@@ -10,6 +10,7 @@
 html,body {
     margin:0;
     padding:0;
+    height: 100%;
 }
 
 h1 {
@@ -25,8 +26,7 @@ h1 {
 
 #section-2 {
 	color: white;
-	height: 499px;
-    background-color: #3F607F;
+   background-color: #3F607F;
     background-size: 100%;
 }
 
@@ -40,7 +40,6 @@ h1 {
   padding: 5% 10% 5% 10%;
   justify-content: space-between;
   align-items: flex-start;
-    background-color: #3F607F;
 }
 
 .icon-label {
@@ -69,4 +68,19 @@ h1 {
   text-align: center;
   flex-basis: 25%;
 	
+}
+
+#section-3 {
+background-image: url("mars_landscape2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 90%;
+    overflow: auto;
+}
+
+#transparency {
+	color: white;
+	margin: 5% 10% 0 10%;
+ 	background: blue;
+ 	opacity: .5;
 }
