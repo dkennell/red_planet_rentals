@@ -37,25 +37,36 @@ h1 {
 
 #icons {
   display: flex;
+  padding: 5% 10% 5% 10%;
+  justify-content: space-between;
+  align-items: flex-start;
+    background-color: #3F607F;
+}
+
+.icon-label {
+	padding-top: 13%;
+	padding-bottom: 5%;
 }
 
 #icon-div-1{
-		font-size: 1.5em;
-		font-weight: bold;
-	background-color: green;
-
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  flex-basis: 25%;
 }
 
 #icon-div-2{
 		font-size: 1.5em;
 		font-weight: bold;
-	background-color: blue;
+  text-align: center;
+  flex-basis: 25%;
 	
 }
 
 #icon-div-3{
 		font-size: 1.5em;
 		font-weight: bold;
-	background-color: red;
+  text-align: center;
+  flex-basis: 25%;
 	
 }
