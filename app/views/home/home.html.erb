@@ -5,25 +5,29 @@
 
 <div id="section-2">
 	<center>
-	<h1>Nature is not a place to visit. It is home.</h1> 
+	<h1 id="quote">Nature is not a place to visit. It is home.</h1> 
 	<h3>― Gary Snyder</h3>		
 	</center>
-	<%= image_tag("rocket_icon.svg", size: "200", id: "icon-1") %>
-	<%= image_tag("satellite_icon.svg", size: "200", id: "icon-2") %>
-	<%= image_tag("astronaut_icon.svg", size: "200", id: "icon-3") %>
-	<span id="icon-label-1">Begin Your Journey</span>
-	<span id="icon-label-2">Stay In Touch</span>
-	<span id="icon-label-3">Make Your Mark</span>
+
+	<div id="icons">
+	  <div id="icon-div-1">
+	    <%= image_tag("rocket_icon.svg", size: "200", id: "icon-1") %>
+	    <div id="icon-label-1">Begin Your Journey</div>
+      </div>
+
+	  <div id="icon-div-2">
+	    <%= image_tag("satellite_icon.svg", size: "200", id: "icon-2") %>
+	    <div id="icon-label-2">Stay In Touch</div>
+      </div>
+
+	  <div id="icon-div-3">
+	    <%= image_tag("astronaut_icon.svg", size: "200", id: "icon-3") %>
+	    <div id="icon-label-3">Make Your Mark</div>
+      </div>
+    </div>
+
 	<br>
 
-</div>
-
-<div class="container">
-  <div class="row">
-	<span class="col-4">One</span>
-	<span class="col-4">Two</span>
-	<span class="col-4">Three</span>
-</div>
 </div>
 
 <div id="section-3">

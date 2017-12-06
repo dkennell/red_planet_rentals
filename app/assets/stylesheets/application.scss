@@ -14,69 +14,10 @@
  *= require_self
  */
 
- @import "bootstrap";
-
 /* CSS reset */
+
+
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
     margin:0;
     padding:0;
-}
-html,body {
-    margin:0;
-    padding:0;
-}
-
-h1 {
-	padding: 20px;
-}
-
-#section-1 {
-	height: 570px;
-    background-image: url("martian_landscape3.png");
-    background-size: 100%;
-}
-
-#section-2 {
-	color: white;
-	height: 499px;
-    background-color: #3F607F;
-    background-size: 100%;
-}
-
-#section-2 h1{
-	padding-top: 50px;
-	font-size: 4em;
-}
-
-#icon-1{
-	padding: 60px 100px 30px 100px;
-}
-
-#icon-2{
-	padding: 60px 100px 30px 100px;
-}
-
-#icon-3{
-	padding: 60px 100px 30px 100px;
-}
-
-#icon-label-1{
-	padding: 50px 100px 0 95px;
-		font-size: 1.5em;
-		font-weight: bold;
-
-}
-
-#icon-label-2{
-	padding: 50px 100px 0 155px;
-		font-size: 1.5em;
-		font-weight: bold;
-	
-}
-
-#icon-label-3{
-	padding: 50px 100px 0 165px;
-		font-size: 1.5em;
-		font-weight: bold;
-	
 }

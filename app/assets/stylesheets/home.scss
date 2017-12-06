@@ -2,6 +2,60 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+ @import "bootstrap";
+
+
+
+html,body {
+    margin:0;
+    padding:0;
+}
+
 h1 {
-	color: green;
+	padding: 20px;
+}
+
+#section-1 {
+	height: 570px;
+    background-image: url("martian_landscape3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#section-2 {
+	color: white;
+	height: 499px;
+    background-color: #3F607F;
+    background-size: 100%;
+}
+
+#section-2 h1{
+	padding-top: 50px;
+	font-size: 4em;
+}
+
+#icons {
+  display: flex;
+}
+
+#icon-div-1{
+		font-size: 1.5em;
+		font-weight: bold;
+	background-color: green;
+
+}
+
+#icon-div-2{
+		font-size: 1.5em;
+		font-weight: bold;
+	background-color: blue;
+	
+}
+
+#icon-div-3{
+		font-size: 1.5em;
+		font-weight: bold;
+	background-color: red;
+	
 }
