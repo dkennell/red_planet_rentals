@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+neighborhood = Neighborhood.create({
+	name: "Hellas Basin"})
+
+
+neighborhood.display_image = URI.parse("app/assets/images/neighborhood_hellas_basin.jpg")
+neighborhood.save
