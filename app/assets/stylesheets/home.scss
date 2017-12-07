@@ -97,7 +97,7 @@ h1 {
 
 #section-4 {
     height: 90%;
-    background-color: purple;
+    background-color: grey;
     overflow: hidden;
 }
 
@@ -121,16 +121,21 @@ h1 {
   background-image: url('./kristen-bell.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: 0 10%;
 }
 
 #review-2 {
   background-image: url('./mel-johnson-jr.jpg');
-  background-size: 100%;
+  height: 100%;
+  background-size: 110%;
   background-repeat: no-repeat;
 }
 
 #review-3 {
-    background-color: red;
+  background-image: url('./matt-damon.jpg');
+  height: 100%;
+  background-size: 120%;
+  background-repeat: no-repeat;
 }
 
 .rating {
