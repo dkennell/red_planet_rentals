@@ -10,5 +10,5 @@ neighborhood = Neighborhood.create({
 	name: "Hellas Basin"})
 
 
-neighborhood.display_image = URI.parse("app/assets/images/neighborhood_hellas_basin.jpg")
+neighborhood.display_image = URI.parse("app/assets/images/neighborhood_hellas_basin.jpg"+)
 neighborhood.save

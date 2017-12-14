@@ -11,6 +11,34 @@ html,body {
   height: 100%;
 }
 
+
+@media (max-width: 720px) {
+#section-1 {
+  height: 450px;
+  background-image: url("martian_landscape3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+}
+
+#section-1 {
+ h1 {
+ color: white;
+ text-align: center;
+ padding: 20% 5% 0 5%;
+ }
+
+ form {
+   text-align: center;
+   padding-top: 10%;
+ }
+
+
+
+}
+
+@media (min-width: 720px) {
+
 h1 {
 	padding: 20px;
 }
@@ -197,4 +225,5 @@ color: white;
 
 
 #section-6 h1 {
+}
 }
