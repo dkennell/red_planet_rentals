@@ -9,21 +9,17 @@ html,body {
   height: 100%;
 }
 
+/*=============================*/
+/*===FIRST MEDIA QUERY START===*/
+/*=============================*/
 
 @media (max-width: 720px) {
-#section-1 {
-  height: 450px;
-  background-image: url("martian_landscape3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
   nav {
-
     height: 50px;
-    background-color: white;
+    background-color: #f9e4d9;
     label {
-    }
+  }
 
     label:after {
     font-size: 3em;
@@ -58,12 +54,75 @@ html,body {
     }
 
   }
+
+#section-1 {
+  height: 400px;
+  background-image: url("martian_landscape3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+ h1 {
+   font-size: 3em;
+   position: relative;
+   color: white;
+   text-align: center;
+   line-height: 1.3em;
+   padding: 75px 5% 0 5%;
+ }
+
+ form {
+   text-align: center;
+   padding-top: 10%;
+ }
 }
+
+#section-2 {
+  color: white;
+  background-color: #3F607F;
+
+  h1{
+   font-size: 3em;
+   position: relative;
+   color: white;
+   text-align: center;
+   line-height: 1.3em;
+   padding: 15px 5% 5% 5%;
+  }
+
+  h3 {
+    padding-bottom: 10%;
+  }
+}
+
+#icons {
+  padding: 5% 10% 5% 10%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.icon-label {
+  padding-top: 13%;
+  padding-bottom: 5%;
+}
+
+.icon-container{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+}
+
+/*=============================*/
+/*===FIRST MEDIA QUERY END=====*/
+/*=============================*/
+
 
 #logo {
 
 height: 100%;
-}
+} 
 
 input[type=checkbox] {
   position: absolute;
@@ -71,21 +130,14 @@ input[type=checkbox] {
   top: -9999px;
 }
 
-#section-1 {
- h1 {
- color: white;
- text-align: center;
- padding: 20% 5% 0 5%;
- }
-
- form {
-   text-align: center;
-   padding-top: 10%;
- }
 
 
 
-}
+
+
+/*=============================*/
+/*==SECOND MEDIA QUERY START===*/
+/*=============================*/
 
 @media (min-width: 720px) {
 
@@ -277,3 +329,7 @@ color: white;
 #section-6 h1 {
 }
 }
+
+/*=============================*/
+/*===SECOND MEDIA QUERY END====*/
+/*=============================*/
