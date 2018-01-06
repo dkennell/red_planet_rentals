@@ -1,6 +1,6 @@
-class DeviseCreateUserViews < ActiveRecord::Migration[5.1]
+class DeviseCreateControllers < ActiveRecord::Migration[5.1]
   def change
-    create_table :views:users do |t|
+    create_table :controllers do |t|
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
@@ -30,13 +30,14 @@ class DeviseCreateUserViews < ActiveRecord::Migration[5.1]
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
+      t.string :Users
 
       t.timestamps null: false
     end
 
-    add_index :views:users, :email,                unique: true
-    add_index :views:users, :reset_password_token, unique: true
-    # add_index :views:users, :confirmation_token,   unique: true
-    # add_index :views:users, :unlock_token,         unique: true
+    add_index :controllers, :email,                unique: true
+    add_index :controllers, :reset_password_token, unique: true
+    # add_index :controllers, :confirmation_token,   unique: true
+    # add_index :controllers, :unlock_token,         unique: true
   end
 end

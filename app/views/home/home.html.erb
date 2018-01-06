@@ -3,18 +3,17 @@
 	<input id="menu-toggle" type="checkbox">
 	<label for="menu-toggle"></label>
 	
-<%= link_to "Add to cart", 
-            :controller => "car", 
-            :action => "add_to_cart", 
-            :car => car.attributes %>
-
 	<ul>
 		<li><%= link_to "Renters", 
-		  controller: "devise/sessions", 
-		  action: "create",
+		  controller: "users/registrations", 
+		  action: "new",
 		  type: "renter" %>
 		  </li>
-		<li><a href="#">Landlords</a></li>
+		<li><%= link_to "Landlords", 
+		  controller: "users/registrations", 
+		  action: "create",
+		  type: "landlord" %>
+		</li>
 		<li><a href="#">About</a></li>
 		<li><a href="#">Contact</a></li>
 	</ul>
