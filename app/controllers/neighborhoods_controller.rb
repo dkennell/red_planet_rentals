@@ -10,6 +10,7 @@ class NeighborhoodsController < ApplicationController
   # GET /neighborhoods/1
   # GET /neighborhoods/1.json
   def show
+    @neighborhood = Neighborhood.find(params[:id])
   end
 
   # GET /neighborhoods/new
@@ -69,6 +70,6 @@ class NeighborhoodsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def neighborhood_params
-      params.require(:neighborhood).permit(:name)
+      params.require(:neighborhood).permit(:name, :display_image)
     end
 end

@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<div className="neighborhood-hero">
-<p>
-  <strong>Name:</strong>
-  <%= @neighborhood.name %>
-</p>
+<div class="hero-container" style="background-image: url('<%= @neighborhood.display_image.url(:medium) %>');">
+	<h3>Neighborhood:</h3>
+	<h1><%= @neighborhood.name %></h1>
 </div>
+
+<p>A hip and exciting neighborhood, the Hellas Basin is the spot to watch for 2377! Great for young professionals and lithium miners, this neighborhood has it all - 2 restaurants and even a bar! Want to be where the night life is? Make your home in largest visible impact crater in the solar system!</p>
 
 <%= link_to 'Edit', edit_neighborhood_path(@neighborhood) %> |
 <%= link_to 'Back', neighborhoods_path %>
