@@ -6,7 +6,6 @@ class CreateProperties < ActiveRecord::Migration[5.1]
       t.string :rooms
       t.integer :price
       t.string :address
-      t.string :owner_email
       t.integer :user_id
       t.integer :neighborhood_id
 

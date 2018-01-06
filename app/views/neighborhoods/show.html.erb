@@ -9,4 +9,14 @@
 <p><%= @neighborhood.description %></p>
 
 <h1>Current Listings</h1>
+
+<% @neighborhood.properties.each do |property| %>
+
+  <div class="listing-container">
+    <%= image_tag property.image.url(:medium) %>
+    <a href="/properties/<%= property.id %>"><%= property.headline %></a>
+  </div>
+
+<% end %>
+
 </div>
