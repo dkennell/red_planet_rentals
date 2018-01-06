@@ -2,8 +2,18 @@
 	<%= image_tag("logo.png",  id: "logo") %>
 	<input id="menu-toggle" type="checkbox">
 	<label for="menu-toggle"></label>
+	
+<%= link_to "Add to cart", 
+            :controller => "car", 
+            :action => "add_to_cart", 
+            :car => car.attributes %>
+
 	<ul>
-		<li><a href="#">Renters</a></li>
+		<li><%= link_to "Renters", 
+		  controller: "devise/sessions", 
+		  action: "create",
+		  type: "renter" %>
+		  </li>
 		<li><a href="#">Landlords</a></li>
 		<li><a href="#">About</a></li>
 		<li><a href="#">Contact</a></li>
