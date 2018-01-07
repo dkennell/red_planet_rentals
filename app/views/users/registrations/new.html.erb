@@ -1,16 +1,41 @@
   <div class="signup-ad">
+
+    <!-- AD FOR RENTERS -->
     <% if params[:type] == "renter" %>
       <div class="icon-container">
         <%= image_tag("apartment.png", class: "icon") %>
+      <p>Find Your Dream Home</p>
+      </div>
+      <div class="icon-container">
         <%= image_tag("envelope.png", class: "icon") %>
-      <p>Talk to Landlords</p>
+      <p>Talk to Owners</p>
+    </div>
+     <div class="icon-container">
       <%= image_tag("key.png", class: "icon") %>
       <p>Move In</p>
+    </div>
+    <% end %>
+
+    <!-- AD FOR LANDLORDS -->
+    <% if params[:type] == "landlord" %>
+      <div class="icon-container">
+        <%= image_tag("eye.png", class: "icon") %>
+      <p>Get Your Properties Seen</p>
       </div>
+      <div class="icon-container">
+        <%= image_tag("deal.png", class: "icon") %>
+      <p>Make Deals Fast</p>
+    </div>
+     <div class="icon-container">
+      <%= image_tag("safebox.png", class: "icon") %>
+      <p>Stay Safe</p>
+    </div>
     <% end %>
   </div>
 
+</div>
 
+<div class="signup-form">
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -40,5 +65,5 @@
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
-
 <%= render "users/shared/links" %>
+</div>

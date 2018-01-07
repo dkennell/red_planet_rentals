@@ -2,9 +2,21 @@
 
 	.icon-container {
 		display: flex;
+		margin: 5%;
+		padding: 0;
 
 		img.icon {
-			width: 100px;
+			flex: 1;
+		}
+
+		p {
+		font-size: 1em;
+		flex: 3;
+		align-self: center;
 		}
 	}
+}
+
+.signup-form {
+	margin: 10% 5% 5% 5%;
 }

@@ -9,6 +9,30 @@
   </head>
 
   <body>
+  	<nav>
+	<a href="/"><%= image_tag("logo.png",  id: "logo") %>
+	</a>
+	<a href="/"><%= image_tag("user_icon.svg", id: "user-icon") %>
+	</a>
+	<input id="menu-toggle" type="checkbox">
+	<label for="menu-toggle"></label>
+	
+	<ul>
+		<li><%= link_to "Renters", 
+		  controller: "users/registrations", 
+		  action: "new",
+		  type: "renter" %>
+		  </li>
+		<li><%= link_to "Landlords", 
+		  controller: "users/registrations", 
+		  action: "new",
+		  type: "landlord" %>
+		</li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</nav>
+
     <%= yield %>
   </body>
 </html>
