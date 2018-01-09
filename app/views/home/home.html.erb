@@ -84,34 +84,40 @@
 	<div id="reviews">
 
 		<div class="review-container">
-			<%= image_tag('mel-johnson-jr.jpg') %>
-			<div class="stars">
-			<span>&#x2605; &#x2605; &#x2605; &#x2605; &#9734; </span>
+			<%= image_tag('mel-johnson-jr.jpg', id: "mel") %>
+	        <div class="blurb-container">
+			  <div class="stars">
+			    <span>&#x2605; &#x2605; &#x2605; &#x2605; &#9734; </span>
+			  </div>
+			  <p class="review-content">An experience like no other - easier than renting Earthside.
+			  </p>
 			</div>
-			<p class="review-content">An experience like no other - easier than renting Earthside.
-			</p>
 		</div>
 
 		<div class="review-container">
-	      <%= image_tag('kristen-bell-small.jpg') 	    <div class="blurb-container">
-
-		  <div class="stars">
+	      <%= image_tag('kristen-bell-small.jpg', id: "bell")%>
+	      <div class="blurb-container">
+	 	    <div class="stars">
 				<span>&#x2605; &#x2605; &#x2605; &#x2605; &#x2605; </span>
-		  </div>
+		    </div>
 			<p class="review-content">An absolute gamechanger; bound to revolutionize the way people 
 				move off-planet.
 			</p>
-			</div>
-	    </div>
+		  </div>
+		</div>
 
 		<div class="review-container">
-			<%= image_tag('matt-damon.jpg') %>
-		<div class="stars">
-			<span>&#x2605; &#x2605; &#x2605; &#x2605; &#x2605; </span>
-		</div>
-		<p class="review-content">This is what renters and landlords have been waiting for.
-   			Finally, a true Martian rental market.
-		</p>
+		  <%= image_tag('matt-damon.jpg', id: "matt") %>
+		  	<div class="blurb-container">
+		      <div class="stars">
+			    <span>&#x2605; &#x2605; &#x2605; &#x2605; &#x2605; 
+			    </span>
+		      </div>
+			  <p class="review-content">
+			  	This is what renters and landlords have been waiting for.
+   			    Finally, a true Martian rental market.
+			  </p>
+			</div>
 		</div>
 
 	</div>
