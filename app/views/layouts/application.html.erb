@@ -12,8 +12,13 @@
   	<nav>
 	<a href="/"><%= image_tag("logo.png",  id: "logo") %>
 	</a>
-	<a href="/"><%= image_tag("user_icon.svg", id: "user-icon") %>
-	</a>
+
+
+	<%= link_to image_tag("user_icon.svg", id: "user-icon"), controller: 'users', action: 'show', user_id: current_user %>
+
+
+
+
 	<input id="menu-toggle" type="checkbox">
 	<label for="menu-toggle"></label>
 	

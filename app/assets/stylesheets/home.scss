@@ -20,8 +20,6 @@ html,body {
 /*===FIRST MEDIA QUERY START===*/
 /*=============================*/
 
-@media (max-width: 720px) {
-
   nav {
     position: relative;
     height: 50px;
@@ -303,12 +301,6 @@ padding: 5%;
 
 
 
-}
-
-/*=============================*/
-/*===FIRST MEDIA QUERY END=====*/
-/*=============================*/
-
 
 #logo {
 
@@ -335,6 +327,34 @@ input[type=checkbox] {
 /*==SECOND MEDIA QUERY START===*/
 /*=============================*/
 
+@media (min-width: 600px) {
+	#section-1 {
+		h1 {
+			font-size: 4.5em;
+		}
+	}
+  #icons {
+  padding: 5%;
+	.icon-container {
+		display: flex;
+		margin: 5% 0;
+		padding: 0;
+
+		.blurb-container{
+		  margin: 5%;
+		}
+
+		#icon-2 {
+		  order: 2;
+		}
+	}
+  }
+}
+
+
+
+
+/*
 @media (min-width: 720px) {
 
 h1 {
@@ -359,12 +379,7 @@ h1 {
 	font-size: 4em;
 }
 
-#icons {
-  display: flex;
-  padding: 5% 10% 5% 10%;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+
 
 .icon-label {
 	padding-top: 13%;
@@ -526,6 +541,7 @@ color: white;
 }
 }
 
+*/
 /*=============================*/
 /*===SECOND MEDIA QUERY END====*/
 /*=============================*/
