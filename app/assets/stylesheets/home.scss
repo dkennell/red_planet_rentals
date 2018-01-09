@@ -89,22 +89,24 @@ html,body {
 #section-2 {
   color: white;
   background-color: #3F607F;
+  /* prevent margin collapse */
+  padding-top: 1px;
+  margin-top: -1px;
+  padding-bottom: 1px;
+  margin-bottom: -1px;
+  .confucious-quote {
 
-  h1{
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5%;
 
-
-
-
+  h1 {
     font-family: 'Kaushan Script', cursive;
-font-weight: 100;
-
-
-
-   font-size: 3em;
-   position: relative;
-   color: white;
-   line-height: 1.3em;
-   padding: 15px 5% 5% 5%;
+    font-weight: 100;
+    font-size: 3em;
+    position: relative;
+    color: white;
+    line-height: 1.3em;
+    padding: 15px 5% 5% 5%;
   }
 
   h2 {
@@ -114,7 +116,7 @@ font-weight: 100;
     text-align: right;
   }
 }
-
+}
 #icons {
   padding: 5% 10% 5% 10%;
   justify-content: space-between;
