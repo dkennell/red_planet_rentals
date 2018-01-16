@@ -6,6 +6,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Special+Elite|Bad+Script|Cookie|Great+Vibes|Kaushan+Script|Marck+Script|Poiret+One|Tangerine|Yellowtail|Rajdhani');
 
+$background-color: #f0f0c9;
+$house-color: #D53E36;
+$dark-orange: #ba5c12;
+$dark-blue: #124e78;
+$skin-color: #ffb86f;
+$mustard: #e0ca3c;
+
 html,body {
   width: 100%;
   height: 100%;
@@ -23,7 +30,7 @@ html,body {
   nav {
     position: relative;
     height: 50px;
-    background-color: #f9e4d9;
+    background-color: $background-color;
     label {
   }
 
@@ -78,6 +85,10 @@ html,body {
    text-align: center;
    line-height: 1.3em;
    padding: 75px 5% 0 5%;
+
+   
+     span { color: $dark-blue;}
+   
  }
 
  form {
@@ -87,17 +98,18 @@ html,body {
 }
 
 #section-2 {
-  color: white;
-  background-color: #3F607F;
+  background-color: $background-color;
   /* prevent margin collapse */
   padding-top: 1px;
   margin-top: -1px;
   padding-bottom: 1px;
   margin-bottom: -1px;
   .confucious-quote {
-
-    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    background: #ba5c12;
     margin: 5%;
+    border-radius: 5px;
+    box-shadow: 6px 3px 5px black;
 
   h1 {
     font-family: 'Kaushan Script', cursive;
@@ -107,11 +119,17 @@ html,body {
     color: white;
     line-height: 1.3em;
     padding: 15px 5% 5% 5%;
+
+    span {
+      color: $dark-blue;
+    }
   }
 
   h2 {
-      font-family: 'Kaushan Script', cursive;
-font-weight: 100;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2em;
+    color: white;
+    font-weight: 100;
     padding: 0 5% 10% 0;
     text-align: right;
   }
@@ -126,6 +144,7 @@ font-weight: 100;
 .icon-label {
   padding-top: 13%;
   padding-bottom: 5%;
+  color: #124e78;
 }
 
 .icon-container{
@@ -164,25 +183,28 @@ font-weight: 100;
 }
 
 #transparency h1 {
-  padding: 5% 1% 0 5%;
+  font-size: 3em;
+  padding: 5% 1% 3% 5%;
+  color: #124e78;
 }
 
 #section-4 {
-  background-color: grey;
+  background-color: $dark-orange;
   overflow: hidden;
 
   h1{
 
-
-
     font-family: 'Rajdhani', sans-serif;
-
     font-size: 3em;
     position: relative;
     color: white;
     text-align: center;
     line-height: 1.3em;
     padding: 15px 5% 0 5%;
+
+    span {
+      color: $dark-blue;
+    }
   }
 
   #reviews {
